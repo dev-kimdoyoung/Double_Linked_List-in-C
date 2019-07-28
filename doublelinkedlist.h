@@ -1,8 +1,7 @@
 #ifndef DOUBLELINKEDLIST_H
 #define DOUBLELINKEDLIST_H
 typedef struct Data {
-    char name[10];              // 이름
-    int age;                    // 나이
+    int number;
     struct Data* next;          // 다음 노드
     struct Data* previous;      // 이전 노드
 }Data;
@@ -21,7 +20,7 @@ _Bool createList(LinkedList* linkedlist);
 _Bool deleteList(LinkedList* linkedlist);
 
 // 노드 추가
-_Bool addNode(LinkedList* linkedlist, int index);
+_Bool addNode(LinkedList* linkedlist, int number);
 
 // 노드 제거
 _Bool removeNode(LinkedList* linkedlist, int index);
